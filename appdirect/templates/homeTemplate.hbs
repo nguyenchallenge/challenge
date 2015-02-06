@@ -1,0 +1,22 @@
+<a class="edit" href="#">
+  edit
+</a>
+<div class="container-tweets">
+    \{{#each data}}
+    <div class="container-tweet" draggable="true" data-id="\{{name}}">
+      <h2>\{{name}}</h2>
+      <ul class="\{{name}}">
+        \{{#each statuses}}
+          <li>
+            <h3>\{{humanReadingDate created_at}}</h3>
+            <span>\{{{parseUrl text}}}</span>
+            <p>\{{{source}}}</p>
+            <span>\{{#if retweeted}}</span>
+            <span>\{{user.name}}</span>
+            \{{/if}}
+          </li>
+        \{{/each}}
+      </ul>
+      </div>
+    \{{/each}}
+</div>

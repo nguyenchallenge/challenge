@@ -1,0 +1,21 @@
+development:
+  - traceur
+  - browserify
+  - less:development
+  - watch
+  - connect:development
+
+dev:
+    - development
+
+build:
+  - traceur
+  - browserify
+  - less:development
+  - connect:development
+
+default:
+    - development
+
+server:
+    - connect:development

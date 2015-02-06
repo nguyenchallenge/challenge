@@ -1,0 +1,17 @@
+.editable {
+  [draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: element;
+  }
+
+  .container-tweet {
+    cursor: move;
+
+    .over {
+      border: 2px dashed #000;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "appdirectServer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "Bao Nguyen",
+  "license": "",
+  "dependencies": {
+    "async": "0.9.0",
+    "memory-cache": "0.0.5",
+    "express": "4.4.2",
+    "restify": "2.8.1",
+    "twit": "1.1.19"
+  }
+}

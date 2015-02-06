@@ -1,0 +1,117 @@
+header {
+  width: 100%;
+  height: 130px;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+header .logo {
+  background-image: url('../imgs/appdirect_logo.png');
+  background-repeat: no-repeat;
+  width: 434px;
+  height: 116px;
+}
+body {
+  margin: 0;
+}
+.container.editable .edit {
+  background-color: #ddd;
+  border: 2px dashed #eee;
+}
+.container .edit {
+  display: block;
+  margin: 0 10px;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+}
+.container-tweets {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.container-tweets h2 {
+  left: 0;
+  top: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 70px;
+  background-color: #dedede;
+  border-bottom: 2px solid #000;
+  margin: 0;
+}
+.container-tweets .container-tweet {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+  min-width: 320px;
+  border: 1px solid #000;
+  max-height: 600px;
+  overflow: scroll;
+  margin: 10px;
+  background: #f4f4f4;
+  position: relative;
+  padding-top: 55px;
+}
+.container-tweets .container-tweet.index_1 {
+  order: 1;
+}
+.container-tweets .container-tweet.index_2 {
+  order: 2;
+}
+.container-tweets .container-tweet.index_3 {
+  order: 3;
+}
+.container-tweets .container-tweet ul {
+  padding: 0;
+}
+.container-tweets .container-tweet ul li {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px dashed #000;
+}
+.container-tweets .container-tweet ul li:last-child {
+  border-bottom: none;
+}
+.container-tweets .container-tweet ul li p {
+  text-align: right;
+}
+.editable .container-tweet {
+  border: 3px dashed #ddd;
+}
+.editable [draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: element;
+}
+.editable .container-tweet {
+  cursor: move;
+}
+.editable .container-tweet .over {
+  border: 2px dashed #000;
+}
